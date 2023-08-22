@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>assignment 5 </title>
+
+        <!-- daisyui link taild css link -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    background: {
+                        mmbg: "red"
+                        // mmbg: "#F9F6E2"
+                    }
+
+                    //  '#F9F6E2',
+                }
+            }
+        }
+    </script>
+    </head>
+
+    <body class="bg-zinc-100 text-black">
+        <header class=" bg-[#F9F6E2] ">
+
+            <div
+                class="container md:flex-row md:py-10 flex items-center justify-center flex-col mx-auto py-6 px-3 ">
+
+                <div class="flex flex-col  gap-4 items-center flex-1 md:gap-8">
+                    <h3 class="text-lg  font-medium uppercase md:text-2xl">---SALE
+                        FEVER---</h3>
+
+                    <h3
+                        class=" md:block md:text-5xl hidden max-w-[500px] sm:text-4xl text-3xl font-bold ">
+                        Purchase TK 100 or above & get
+                        <span class="mm-text-color">20% off</span>
+                    </h3>
+
+                    <h3
+                        class="block sm:text-4xl md:hidden md:text-5xl max-w-[500px] text-3xl font-bold ">
+                        Purchase TK 100 or <br> above & get
+                        <span class="mm-text-color">20% off</span>
+                    </h3>
+
+                    <div class="flex justify-center items-center gap-3 text-lg">
+                        <p class>Use Promo Code</p>
+                        <button id
+                            class="text-white rounded-md bg-[#E527B2] text-lg py-2 px-7 border-0 outline-0 ">SELL100</button>
+                    </div>
+                </div><!-- hero left col end-->
+
+                <div class=" flex-1    ">
+                    <div class="flex items-center justify-center">
+                        <img class="inline-block "
+                            src="assets/image/Summer 1.png" alt>
+                    </div>
+                </div>
+
+            </div>
+
+        </header> <!-- header end-->
+
+        <!-- ---------------------------------------------------------- -------------------------- --
+         --------------------------- site main container
+        -- -------------------------------------------------------------------------------------- -->
+        <main class="container mx-auto px-3 ">
+
+            <div class=" grid grid-cols-12  gap-3 sm:mt-16 md:mt-20 mt-12">
+
+                <div
+                    class="lg:col-span-9 sm:col-span-6 col-span-12 items-center md:col-span-8 justify-items-center">
+
+                    <h1 class="text-3xl font-medium my-4">Kitchenware</h1>
+                    <div
+                        class="grid lg:grid-cols-3  grid-cols-1 md:grid-cols-2 gap-6  mt-5">
+
+                        <!-- -----------------Kitchenware ariful-item 1---------------- -->
+                        <div id="ariful-item-1"
+                            class="flex justify-center items-center gap-3 flex-col bg-white p-3 rounded-xl hover:cursor-pointer ">
+                            <div
+                                class="bg-zinc-100 rounded-lg w-full flex items-center justify-center p-4  ">
+                                <img class src="assets/image/prod1.png" alt>
+                            </div>
+
+                            <div class="rating rating-sm mt-2">
+                                <input type="radio" name="rating-1"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-1"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-1"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-1"
+                                    class="mask mask-star-2 bg-orange-400"
+                                    checked />
+                                <input type="radio" name="rating-1"
+                                    class="mask mask-star-2 bg-orange-400" />
+                            </div> <!--rating container end-->
+                            <h4 id="ariful-item-title-1"
+                                class="text-lg font-medium">A.
+                                Accessories</h4>
+                                <div class="flex">
+                                    <p class=" text-gray-500 font-medium">
+                                        <p id="ariful-item-price-1">39.00 </p>
+                                        <p class="ml-1">TK </p>
+                                </div>
+                            </p>
+                        </div><!-- ariful-item 1 end-->
+
+                        <!-- ----------------- Kitchenware ariful-item 2---------------- -->
+                        <div id="ariful-item-2"
+                            class="flex justify-center items-center gap-3 flex-col bg-white p-3 rounded-xl  ">
+                            <div
+                                class="bg-zinc-100 rounded-lg w-full flex items-center justify-center p-4  ">
+                                <img src="assets/image/prod2.png" alt>
+                            </div>
+
+                            <div class="rating rating-sm mt-2">
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 bg-orange-400"
+                                    checked />
+                                <input type="radio" name="rating-1"
+                                    class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h4 id="ariful-item-title-2"
+                                class="text-lg font-medium">K.
+                                Accessories</h4>
+                            <!------------------------- ariful-item price ----------------------- -->
+                            <div class="flex">
+                                <p class="text-gray-500 font-medium"><p
+                                        id="ariful-item-price-2">25.00 </p> <p class="ml-2">TK</p></p>
+                            </div>
+                        </div><!-- ariful-item 2 end -->
+
+                        <!-- -----------------Kitchenware ariful-item 3 ---------------- -->
+                        <div id="ariful-item-3"
+                            class="flex justify-center items-center gap-3 flex-col bg-white p-3 rounded-xl  ">
+                            <div
+                                class="bg-zinc-100 rounded-lg w-full flex items-center justify-center p-4  ">
+                                <img src="assets/image/prod3.png" alt>
+                            </div>
+
+                            <div class="rating rating-sm mt-2">
+                                <input type="radio" name="rating-3"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-3"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-3"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-3"
+                                    class="mask mask-star-2 bg-orange-400"
+                                    checked />
+                                <input type="radio" name="rating-3"
+                                    class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h4 id="ariful-item-title-3"
+                                class="text-lg font-medium">Home
+                                Cooker</h4>
+                                <div class="flex">
+                                    <p class=" text-gray-500 font-medium"><p
+                                            id="ariful-item-price-3">49.00 </p> <p class="ml-1">TK
+                                        </p>
+                                    </p>
+                                </div>
+                        </div><!-- ariful-item 3 end -->
+
+                    </div><!-- ariful-item box end -->
+
+                    <!----------------- cart two box-------------------- -->
+                    <h1 class="text-3xl font-medium mt-10 my-4">Sportswear</h1>
+                    <div
+                        class="grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1  gap-6   mt-5">
+                        <!-- -------------- Kitchenware ariful-item 1------------- -->
+                        <div id="ariful-item-4"
+                            class="flex justify-center items-center gap-3 flex-col bg-white p-3 rounded-xl  ">
+                            <div
+                                class="bg-zinc-100 rounded-lg w-full flex items-center justify-center p-4  ">
+                                <img src="assets/image/prod4.png" alt>
+                            </div>
+
+                            <div class="rating rating-sm mt-2">
+                                <input type="radio" name="rating-4"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-4"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-4"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-4"
+                                    class="mask mask-star-2 bg-orange-400"
+                                    checked />
+                                <input type="radio" name="rating-4"
+                                    class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h4 id="ariful-item-title-4"
+                                class="text-lg font-medium">Sports
+                                Back Cap</h4>
+                                <div class="flex">
+                                    <p class=" text-gray-500 font-medium">
+                                        <p id="ariful-item-price-4">49.00 </p>
+                                        <p class="ml-2">TK </p>
+                                </div>
+                            </p>
+                        </div><!-- ariful-item 4-->
+
+                        <!-- ---------------- Kitchenware ariful-item 2--------------- -->
+                        <div id="ariful-item-5"
+                            class="flex justify-center items-center gap-3 flex-col bg-white p-3 rounded-xl  ">
+                            <div
+                                class="bg-zinc-100 rounded-lg w-full flex items-center justify-center p-4  ">
+                                <img src="assets/image/prod5.png" alt>
+                            </div>
+
+                            <div class="rating rating-sm mt-2">
+                                <input type="radio" name="rating-5"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-5"
+                                    class="mask mask-star-2 bg-orange-400"
+                                    checked />
+                                <input type="radio" name="rating-5"
+                                    class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h4 id="ariful-item-title-5"
+                                class="text-lg font-medium">Full
+                                Jersey Set</h4>
+                                <div class="flex">
+                                    <p class=" text-gray-500 font-medium">
+                                        <p id="ariful-item-price-5">69.00 </p>
+                                        <p class="ml-2">TK </p>
+                                </div>
+                            </p>
+                        </div><!-- ariful-item 5 end -->
+
+                        <!-- ----------------- Kitchenware ariful-item 3---------------- -->
+                        <div id="ariful-item-6"
+                            class="flex justify-center items-center gap-3 flex-col bg-white p-3 rounded-xl  ">
+                            <div
+                                class="bg-zinc-100 rounded-lg w-full flex items-center justify-center p-4  ">
+                                <img src="assets/image/prod6.png" alt>
+                            </div>
+
+                            <div class="rating rating-sm mt-2">
+                                <input type="radio" name="rating-6"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-6"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-6"
+                                    class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-6"
+                                    class="mask mask-star-2 bg-orange-400"
+                                    checked />
+                                <input type="radio" name="rating-6"
+                                    class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <h4 id="ariful-item-title-6"
+                                class="text-lg font-medium">Sports
+                                cates</h4>
+                                <div class="flex">
+                                    <p class=" text-gray-500 font-medium">
+                                        <p id="ariful-item-price-6">159.00 </p>
+                                        <p class="ml-2">TK </p>
+                                </div>
+                            </p>
+                        </div><!-- ariful-item 6 end -->
+
+                    </div><!-- ariful-item box end -->
+
+                </div><!-- ariful-item main  container gird col span 3 end -->
+
+                <!----------------------- calculation area--------------------------- -->
+                <div
+                    class=" lg:col-span-3 md:col-span-4  sm:col-span-6 col-span-12 mt-20 ">
+
+                    <div class="bg-white rounded-lg  p-4 mb-5 font-medium">
+                        <h3>Have coupon?</h3>
+                        <div
+                            class="grid grid-cols-12  bg-white  border-[1px] border-gray-100 mt-3  rounded-xl overflow-hidden">
+                            <!-- apply cupon input  -->
+                            <input id="cupon-input"
+                                class="outline-none col-span-7 p-2  border-0 bg-white rounded-lg font-normal"
+                                type="text"
+                                placeholder="Coupon code">
+                            <!-- apply cupon button  -->
+                            <button id="cupon" disabled
+                                class=" deactive col-span-5 bg-[#E527B2] text-white">Apply
+                                </button>
+                        </div> <!-- apply cupon contaiern end  -->
+                    </div> <!-- apply cupon main container end  -->
+
+                    <!-- ---sidebar container two ariful-item details --------- -->
+                    <div class="bg-white rounded-lg  p-4 mb-5 font-medium">
+
+                        <h3 class="border-b border-gray-300 pb-3">Your shoping
+                            details</h3>
+                        <!-- -------- user ariful-item title contaner   ------------ -->
+                        <div id="user-item-select-title"
+                            class="p-1 mt-4 border-b border-gray-300 ">
+                        </div><!-- user ariful-item title title end -->
+
+                        <!-- ----------  user ariful-item price contaner  -------------- -->
+                        <div id="user-item-price-parsent" class="p-1 mt-4 ">
+
+                            <div class="flex mb-2">
+                                <p>Total price: </p>
+                                <p id="total-price" class="text-gray-400"> 0</p>
+                            </div>
+
+                            <div class="flex mb-2">
+                                <p>Discount: </p>
+                                <p id="discount-ariful" class="text-gray-400">
+                                    00.00</p>
+                            </div>
+
+                            <div class="flex">
+                                <p>Total: </p>
+                                <p id="total-ariful" class="text-gray-400">
+                                    00.00</p>
+                            </div>
+                        </div><!-- user ariful-item price container end-->
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="ariful-item-purchase" disabled
+                            class="w-full  bg-[#E527B2] text-white rounded-lg px-5 py-4 mt-5 deactive"
+                            onclick="my_modal_1.showModal()">Make Purchase</button>
+                        <dialog id="my_modal_1" class="modal">
+                            <form method="dialog" class="modal-box">
+                                <img class="mx-auto"
+                                    src="assets/image/congo.png" alt="photo">
+                                <h3
+                                    class="font-bold text-3xl lg:text-5xl text-center text-[#111]">Congratulations</h3>
+                                <p
+                                    class="py-4 text-center text-xl text-gray-600">Your
+                                    Purchase the product</p>
+                                <div class="text-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button id="go-home"
+                                        class="py-3 px-4 bg-[#E527B2] text-white text-center rounded-lg">Go
+                                        Home</button>
+                                </div>
+                            </form>
+                        </dialog>
+
+                    </div> <!-- apply cupon main container end  -->
+
+                </div><!-- calculator container area end -->
+
+            </div><!-- ariful-item main container end-->
+
+        </main><!-- body main container end-->
+
+        <script src="assets/js/script.js"></script>
+    </body>
+
+</html>
